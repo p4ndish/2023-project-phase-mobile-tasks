@@ -1,9 +1,17 @@
-
-
 class FactorialCalculator:
+    def __init__(self):
+        self.memo = {}
 
-    def factorial(n):
+    def factorial(self, n):
+        if n < 0:
+            raise ValueError("Factorial is not defined for negative numbers.")
+        if n in self.memo:
+            return self.memo[n]
+
         if n == 0:
-            return 1
+            result = 1
         else:
-            return n * FactorialCalculator.factorial(n-1)
+            result = n * self.factorial(n - 1)
+
+        self.memo[n] = result
+        return result
