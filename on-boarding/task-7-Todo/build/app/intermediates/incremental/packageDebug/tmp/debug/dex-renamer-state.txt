@@ -1,0 +1,4 @@
+#Tue Sep 26 22:59:51 EAT 2023
+base.0=/Users/mike/Documents/learnFlutter/2023-project-phase-mobile-tasks/on-boarding/task-7-Todo/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
