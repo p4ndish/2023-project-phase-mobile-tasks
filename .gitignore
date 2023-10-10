@@ -1,1 +1,41 @@
 __pycache__
+# Android
+/build/
+/app/build/
+/app/gradle/
+
+# iOS
+/Pods/
+/ios/Pods/
+/*.xcworkspace/
+/*.xcuserdatad/
+
+# macOS
+/ios/Flutter/Flutter.xcodeproj/
+/ios/Flutter/Generated.xcconfig/
+/DerivedData/
+
+# Windows
+/build/
+/windows/Flutter/Generated.props/
+/windows/Flutter/Generated.propsx/
+/windows/Flutter/Generated.pri/
+/windows/Flutter/Runner/
+
+# IntelliJ and Android Studio IDE
+/.idea/
+/*.iml
+
+# Visual Studio Code
+/.vscode/
+
+# macOS
+/.DS_Store
+
+# Flutter-related
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/flutter/.pub-cache/
+.pub/
+/build/
+

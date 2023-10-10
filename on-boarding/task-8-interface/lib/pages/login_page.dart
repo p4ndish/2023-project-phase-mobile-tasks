@@ -11,29 +11,25 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
-      appBar: AppBar(  
+      appBar: AppBar(
         backgroundColor: Colors.white,
-        
         automaticallyImplyLeading: false,
-        leading :
-
-          IconButton(
+        leading: IconButton(
             icon: Icon(
               Icons.chevron_left,
               size: 43,
-              ),
+            ),
             color: Colors.orange,
-            
-            
-            onPressed:() {
+            onPressed: () {
               Navigator.pop(context);
-            } ),
-        title: Text("Todo Lists",
-        style: TextStyle(
-          color: Colors.black,
-        ),),
+            }),
+        title: Text(
+          "Todo Lists",
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
         actions: [
           Container(
             margin: EdgeInsets.only(right: 14),
@@ -41,29 +37,23 @@ class LoginPage extends StatelessWidget {
               icon: Icon(
                 Icons.more_vert,
                 size: 43,
-                ),
-                
+              ),
               color: Colors.orange,
-              onPressed: () {
-              },
+              onPressed: () {},
             ),
           ),
         ],
       ),
-
       body: Column(
         children: [
-          Container(  
+          Container(
             width: double.infinity,
             height: 300,
             child: Image.asset(
               'assets/home.jpeg',
               fit: BoxFit.cover,
-              ),
-      
+            ),
           ),
-
-          
           Container(
             margin: EdgeInsets.only(top: 19, left: 20),
             alignment: Alignment.topLeft,
@@ -74,13 +64,9 @@ class LoginPage extends StatelessWidget {
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
-                
-                 ),
-            ), 
-      
+              ),
+            ),
           ),
-      
-      
           Column(
             children: [
               Container(
@@ -90,18 +76,16 @@ class LoginPage extends StatelessWidget {
                   height: 80, // Set the desired height
                   child: Column(
                     children: [
-
-
-
-                      
                       Container(
                         decoration: BoxDecoration(
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.2), // Shadow color with opacity
+                              color: Colors.black.withOpacity(
+                                  0.2), // Shadow color with opacity
                               spreadRadius: 2, // Spread radius
                               blurRadius: 3, // Blur radius
-                              offset: Offset(1, 1), // Offset in x and y directions
+                              offset:
+                                  Offset(1, 1), // Offset in x and y directions
                             ),
                           ],
                           color: Color.fromARGB(255, 255, 255, 255),
@@ -117,11 +101,11 @@ class LoginPage extends StatelessWidget {
                           ),
                           child: Column(
                             children: [
-
-                              
                               Container(
                                 alignment: Alignment.centerLeft,
-                                margin: EdgeInsets.only(left: 15,),
+                                margin: EdgeInsets.only(
+                                  left: 15,
+                                ),
                                 padding: EdgeInsets.only(top: 10),
                                 child: Row(
                                   children: [
@@ -130,19 +114,17 @@ class LoginPage extends StatelessWidget {
                                       width: 10, // Width of the stick
                                       height: 30, // Height of the stick
                                       child: Text(
-                                      'U',
+                                        'U',
                                         style: TextStyle(
                                           fontWeight: FontWeight.w400,
                                           fontSize: 22,
                                           fontFamily: 'Inter',
                                         ),
                                       ),
-
                                     ),
-
-
                                     Container(
-                                      margin: EdgeInsets.only(left: 40, right: 40),
+                                      margin:
+                                          EdgeInsets.only(left: 40, right: 40),
                                       child: Text(
                                         'UI/UX App \n design',
                                         style: TextStyle(
@@ -152,9 +134,6 @@ class LoginPage extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-
-
-
                                     Container(
                                       alignment: Alignment.topRight,
                                       padding: EdgeInsets.only(right: 10),
@@ -162,25 +141,20 @@ class LoginPage extends StatelessWidget {
                                       height: 50, // Height of the stick
                                       margin: EdgeInsets.only(left: 60),
                                       child: Text(
-                                      'Apr 20, 2023',
+                                        'Apr 20, 2023',
                                         style: TextStyle(
                                           fontSize: 12,
                                           fontFamily: 'Inter',
                                         ),
                                       ),
-
                                     ),
-
                                     Container(
-
                                       width: 5, // Width of the stick
                                       height: 50, // Height of the stick
-                                      color: Color.fromARGB(255, 161, 52, 52), // Color of the stick
+                                      color: Color.fromARGB(255, 161, 52,
+                                          52), // Color of the stick
                                       margin: EdgeInsets.only(left: 0),
-
-                                  ),
-                                  
-                                  
+                                    ),
                                   ],
                                 ),
                               ),
@@ -192,9 +166,6 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-
-
-
               Container(
                 margin: EdgeInsets.only(top: 10),
                 child: SizedBox(
@@ -202,18 +173,16 @@ class LoginPage extends StatelessWidget {
                   height: 80, // Set the desired height
                   child: Column(
                     children: [
-
-
-
-                      
                       Container(
                         decoration: BoxDecoration(
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.2), // Shadow color with opacity
+                              color: Colors.black.withOpacity(
+                                  0.2), // Shadow color with opacity
                               spreadRadius: 2, // Spread radius
                               blurRadius: 3, // Blur radius
-                              offset: Offset(1, 1), // Offset in x and y directions
+                              offset:
+                                  Offset(1, 1), // Offset in x and y directions
                             ),
                           ],
                           color: Color.fromARGB(255, 255, 255, 255),
@@ -229,11 +198,11 @@ class LoginPage extends StatelessWidget {
                           ),
                           child: Column(
                             children: [
-
-                              
                               Container(
                                 alignment: Alignment.centerLeft,
-                                margin: EdgeInsets.only(left: 15,),
+                                margin: EdgeInsets.only(
+                                  left: 15,
+                                ),
                                 padding: EdgeInsets.only(top: 10),
                                 child: Row(
                                   children: [
@@ -242,19 +211,17 @@ class LoginPage extends StatelessWidget {
                                       width: 10, // Width of the stick
                                       height: 30, // Height of the stick
                                       child: Text(
-                                      'V',
+                                        'V',
                                         style: TextStyle(
                                           fontWeight: FontWeight.w400,
                                           fontSize: 22,
                                           fontFamily: 'Inter',
                                         ),
                                       ),
-
                                     ),
-
-
                                     Container(
-                                      margin: EdgeInsets.only(left: 40, right: 40),
+                                      margin:
+                                          EdgeInsets.only(left: 40, right: 40),
                                       child: Text(
                                         'Testing the \napp',
                                         style: TextStyle(
@@ -264,9 +231,6 @@ class LoginPage extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-
-
-
                                     Container(
                                       alignment: Alignment.topRight,
                                       padding: EdgeInsets.only(right: 10),
@@ -274,25 +238,20 @@ class LoginPage extends StatelessWidget {
                                       height: 50, // Height of the stick
                                       margin: EdgeInsets.only(left: 60),
                                       child: Text(
-                                      'Apr 29, 2023',
+                                        'Apr 29, 2023',
                                         style: TextStyle(
                                           fontSize: 12,
                                           fontFamily: 'Inter',
                                         ),
                                       ),
-
                                     ),
-
                                     Container(
-
                                       width: 5, // Width of the stick
                                       height: 50, // Height of the stick
-                                      color: Color.fromARGB(255, 161, 52, 52), // Color of the stick
+                                      color: Color.fromARGB(255, 161, 52,
+                                          52), // Color of the stick
                                       margin: EdgeInsets.only(left: 0),
-
-                                  ),
-                                  
-                                  
+                                    ),
                                   ],
                                 ),
                               ),
@@ -304,9 +263,6 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-
-
-
               Container(
                 margin: EdgeInsets.only(top: 10),
                 child: SizedBox(
@@ -314,18 +270,16 @@ class LoginPage extends StatelessWidget {
                   height: 80, // Set the desired height
                   child: Column(
                     children: [
-
-
-
-                      
                       Container(
                         decoration: BoxDecoration(
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.2), // Shadow color with opacity
+                              color: Colors.black.withOpacity(
+                                  0.2), // Shadow color with opacity
                               spreadRadius: 2, // Spread radius
                               blurRadius: 3, // Blur radius
-                              offset: Offset(1, 1), // Offset in x and y directions
+                              offset:
+                                  Offset(1, 1), // Offset in x and y directions
                             ),
                           ],
                           color: Color.fromARGB(255, 255, 255, 255),
@@ -341,11 +295,11 @@ class LoginPage extends StatelessWidget {
                           ),
                           child: Column(
                             children: [
-
-                              
                               Container(
                                 alignment: Alignment.centerLeft,
-                                margin: EdgeInsets.only(left: 15,),
+                                margin: EdgeInsets.only(
+                                  left: 15,
+                                ),
                                 padding: EdgeInsets.only(top: 10),
                                 child: Row(
                                   children: [
@@ -354,19 +308,17 @@ class LoginPage extends StatelessWidget {
                                       width: 10, // Width of the stick
                                       height: 30, // Height of the stick
                                       child: Text(
-                                      'F',
+                                        'F',
                                         style: TextStyle(
                                           fontWeight: FontWeight.w400,
                                           fontSize: 22,
                                           fontFamily: 'Inter',
                                         ),
                                       ),
-
                                     ),
-
-
                                     Container(
-                                      margin: EdgeInsets.only(left: 40, right: 40),
+                                      margin:
+                                          EdgeInsets.only(left: 40, right: 40),
                                       child: Text(
                                         'View \nCandidates',
                                         style: TextStyle(
@@ -376,9 +328,6 @@ class LoginPage extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-
-
-
                                     Container(
                                       alignment: Alignment.topRight,
                                       padding: EdgeInsets.only(right: 10),
@@ -386,25 +335,20 @@ class LoginPage extends StatelessWidget {
                                       height: 50, // Height of the stick
                                       margin: EdgeInsets.only(left: 60),
                                       child: Text(
-                                      'Apr 28, 2023',
+                                        'Apr 28, 2023',
                                         style: TextStyle(
                                           fontSize: 12,
                                           fontFamily: 'Inter',
                                         ),
                                       ),
-
                                     ),
-
                                     Container(
-
                                       width: 5, // Width of the stick
                                       height: 50, // Height of the stick
-                                      color: Color.fromARGB(255, 161, 52, 52), // Color of the stick
+                                      color: Color.fromARGB(255, 161, 52,
+                                          52), // Color of the stick
                                       margin: EdgeInsets.only(left: 0),
-
-                                  ),
-                                  
-                                  
+                                    ),
                                   ],
                                 ),
                               ),
@@ -416,75 +360,34 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-
-
-              
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-
-
-
-
-
-  
-
-            Container(
-              margin: EdgeInsets.only(top: 12,left: 0),
-              width: 322,
-              height: 50,
-              child: Container(
-                child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orangeAccent[400],
-                  alignment: Alignment(111, 0)
+              Container(
+                margin: EdgeInsets.only(top: 12, left: 0),
+                width: 322,
+                height: 50,
+                child: Container(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orangeAccent[400],
+                        alignment: Alignment(111, 0)),
+                    child: Center(
+                      child: Text(
+                        "Create task",
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                    onPressed: () => {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TaskDetail())),
+                    },
+                  ),
                 ),
-              child: Center(
-                child: Text(
-                  
-                  "Create task",
-                  style: TextStyle(fontSize: 20),
-                        
-                  
-                ),
-              ),
-            
-              onPressed: () => {
-                Navigator.push(context, 
-                MaterialPageRoute(
-                  
-                  builder: (context) => TaskDetail())),
-              },
-            ),
-          ),
-
-            )
-              
+              )
             ],
           ),
-      
-      
-      
-      
-      
-          
-      
         ],
       ),
-
-      
     );
   }
 }
